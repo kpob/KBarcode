@@ -87,20 +87,20 @@ public class BarcodeView @JvmOverloads constructor(
             0
         ).apply {
             try {
-                val attrFacing = getInteger(R.styleable.BarcodeView_cameraFacing, 1)
+                val attrFacing = getInteger(R.styleable.BarcodeView_bc_cameraFacing, 1)
                 setCameraFacing(cameraFacingAttrConvert(attrFacing))
-                val attrFlashMode = getInteger(R.styleable.BarcodeView_cameraFlashMode, 0)
+                val attrFlashMode = getInteger(R.styleable.BarcodeView_bc_cameraFlashMode, 0)
                 setCameraFlashMode(cameraFlashModeAttrConvert(attrFlashMode))
-                val attrFormats = getInteger(R.styleable.BarcodeView_formats, 0)
+                val attrFormats = getInteger(R.styleable.BarcodeView_bc_formats, 0)
                 setBarcodeFormats(formatsAttrConvert(attrFormats))
-                val attrMinBarcodeWidth = getInteger(R.styleable.BarcodeView_minBarcodeWidth, -1)
+                val attrMinBarcodeWidth = getInteger(R.styleable.BarcodeView_bc_minBarcodeWidth, -1)
                 setMinBarcodeWidth(attrMinBarcodeWidth)
-                val attrSort = getInteger(R.styleable.BarcodeView_sort, 0)
+                val attrSort = getInteger(R.styleable.BarcodeView_bc_sort, 0)
                 setBarcodesSort(sortAttrConvert(attrSort))
-                val attrPreviewScaleType = getInteger(R.styleable.BarcodeView_previewScaleType, 0)
+                val attrPreviewScaleType = getInteger(R.styleable.BarcodeView_bc_previewScaleType, 0)
                 setPreviewScaleType(previewScaleTypeAttrConvert(attrPreviewScaleType))
                 val attrClearFocusDelay = getInteger(
-                    R.styleable.BarcodeView_clearFocusDelay,
+                    R.styleable.BarcodeView_bc_clearFocusDelay,
                     CLEAR_FOCUS_DELAY_DEFAULT.toInt()
                 )
                 setClearFocusDelay(attrClearFocusDelay.toLong())
