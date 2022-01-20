@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="BarcodeView">
-        <attr name="cameraFacing" format="enum">
+        <attr name="bc_cameraFacing" format="enum">
             <enum name="front" value="0" />
             <enum name="back" value="1" />
             <enum name="external" value="2" />
         </attr>
-        <attr name="cameraFlashMode" format="enum">
+        <attr name="bc_cameraFlashMode" format="enum">
             <enum name="off" value="0" />
             <enum name="single" value="1" />
             <enum name="torch" value="2" />
         </attr>
-        <attr name="formats" format="enum">
+        <attr name="bc_formats" format="enum">
             <enum name="all" value="0" />
             <!-- CODABAR, EAN_13, EAN_8, ITF, UPC_A, UPC_E -->
             <enum name="numeric" value="1" />
@@ -22,16 +22,16 @@
             <!-- EAN_13, EAN_8 -->
             <enum name="ean" value="4" />
         </attr>
-        <attr name="minBarcodeWidth" format="integer" />
-        <attr name="sort" format="enum">
+        <attr name="bc_minBarcodeWidth" format="integer" />
+        <attr name="bc_sort" format="enum">
             <enum name="none" value="0" />
             <enum name="central" value="1" />
         </attr>
-        <attr name="previewScaleType" format="enum">
+        <attr name="bc_previewScaleType" format="enum">
             <enum name="centerInside" value="0" />
             <enum name="centerCrop" value="1" />
         </attr>
-        <attr name="clearFocusDelay" format="enum|integer">
+        <attr name="bc_clearFocusDelay" format="enum|integer">
             <enum name="never" value="-1" />
         </attr>
     </declare-styleable>
